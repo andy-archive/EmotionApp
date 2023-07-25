@@ -23,91 +23,111 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8Y-KZ-cQn">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="131"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji1" translatesAutoresizingMaskIntoConstraints="NO" id="biB-r4-uFa">
-                                                <rect key="frame" x="146.66666666666666" y="24.666666666666664" width="100" height="81.666666666666686"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-xX-vu0">
+                                                <rect key="frame" x="158" y="27" width="77" height="77"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="asz-41-0wh"/>
-                                                    <constraint firstAttribute="width" secondItem="biB-r4-uFa" secondAttribute="height" multiplier="11:9" id="rKU-N5-vww"/>
+                                                    <constraint firstAttribute="width" secondItem="wgY-xX-vu0" secondAttribute="height" multiplier="1:1" id="F1V-eR-ARn"/>
                                                 </constraints>
-                                            </imageView>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="emoji1"/>
+                                                <connections>
+                                                    <action selector="emotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhZ-St-IWl"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstItem="biB-r4-uFa" firstAttribute="centerY" secondItem="n8Y-KZ-cQn" secondAttribute="centerY" id="gcc-Mg-qMc"/>
-                                            <constraint firstItem="biB-r4-uFa" firstAttribute="centerX" secondItem="n8Y-KZ-cQn" secondAttribute="centerX" id="gpW-DJ-ffH"/>
+                                            <constraint firstItem="wgY-xX-vu0" firstAttribute="centerY" secondItem="n8Y-KZ-cQn" secondAttribute="centerY" id="EXo-7a-qfG"/>
+                                            <constraint firstItem="wgY-xX-vu0" firstAttribute="centerX" secondItem="n8Y-KZ-cQn" secondAttribute="centerX" id="kdC-Eb-tnj"/>
                                             <constraint firstAttribute="width" secondItem="n8Y-KZ-cQn" secondAttribute="height" multiplier="3:1" id="xGE-Yt-5Qa"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5Q-ZH-CLn">
                                         <rect key="frame" x="0.0" y="131" width="393" height="131"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji2" translatesAutoresizingMaskIntoConstraints="NO" id="7fB-cV-e6d">
-                                                <rect key="frame" x="146.66666666666666" y="24.666666666666693" width="100" height="81.666666666666686"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSB-xz-l4y">
+                                                <rect key="frame" x="158.66666666666666" y="27.666666666666686" width="76" height="76"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="7fB-cV-e6d" secondAttribute="height" multiplier="11:9" id="quP-U6-EcJ"/>
-                                                    <constraint firstAttribute="width" constant="100" id="vsR-mp-QEv"/>
+                                                    <constraint firstAttribute="width" secondItem="OSB-xz-l4y" secondAttribute="height" multiplier="1:1" id="Cz1-fO-igK"/>
                                                 </constraints>
-                                            </imageView>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="emoji2"/>
+                                                <connections>
+                                                    <action selector="emotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RrL-mF-o2H"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="G5Q-ZH-CLn" secondAttribute="height" multiplier="3:1" id="36J-tD-qbz"/>
-                                            <constraint firstItem="7fB-cV-e6d" firstAttribute="centerX" secondItem="G5Q-ZH-CLn" secondAttribute="centerX" id="RQ6-QX-qW4"/>
-                                            <constraint firstItem="7fB-cV-e6d" firstAttribute="centerY" secondItem="G5Q-ZH-CLn" secondAttribute="centerY" id="rpM-D4-sLc"/>
+                                            <constraint firstItem="OSB-xz-l4y" firstAttribute="centerY" secondItem="G5Q-ZH-CLn" secondAttribute="centerY" id="Ivm-kO-8Wj"/>
+                                            <constraint firstItem="OSB-xz-l4y" firstAttribute="centerX" secondItem="G5Q-ZH-CLn" secondAttribute="centerX" id="s1i-xw-7A5"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MFg-vc-CAf">
                                         <rect key="frame" x="0.0" y="262" width="393" height="131"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji3" translatesAutoresizingMaskIntoConstraints="NO" id="f3q-0b-D2g">
-                                                <rect key="frame" x="146.66666666666666" y="24.666666666666693" width="100" height="81.666666666666686"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42G-wT-tbS">
+                                                <rect key="frame" x="159.66666666666666" y="28.666666666666686" width="74" height="74"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="dcQ-Io-Vty"/>
-                                                    <constraint firstAttribute="width" secondItem="f3q-0b-D2g" secondAttribute="height" multiplier="11:9" id="isb-WC-hvj"/>
+                                                    <constraint firstAttribute="width" secondItem="42G-wT-tbS" secondAttribute="height" multiplier="1:1" id="bBG-u7-eUD"/>
                                                 </constraints>
-                                            </imageView>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="emoji3"/>
+                                                <connections>
+                                                    <action selector="emotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZMC-Iu-mim"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
+                                            <constraint firstItem="42G-wT-tbS" firstAttribute="centerY" secondItem="MFg-vc-CAf" secondAttribute="centerY" id="29m-Z4-jXA"/>
+                                            <constraint firstItem="42G-wT-tbS" firstAttribute="centerX" secondItem="MFg-vc-CAf" secondAttribute="centerX" id="5qq-Kw-vQ5"/>
                                             <constraint firstAttribute="width" secondItem="MFg-vc-CAf" secondAttribute="height" multiplier="3:1" id="BcL-YP-ySo"/>
-                                            <constraint firstItem="f3q-0b-D2g" firstAttribute="centerX" secondItem="MFg-vc-CAf" secondAttribute="centerX" id="rh5-r7-Uq0"/>
-                                            <constraint firstItem="f3q-0b-D2g" firstAttribute="centerY" secondItem="MFg-vc-CAf" secondAttribute="centerY" id="sXy-Ff-qCJ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIS-tZ-N7J">
                                         <rect key="frame" x="0.0" y="393" width="393" height="131"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji4" translatesAutoresizingMaskIntoConstraints="NO" id="wOz-Ki-4c2">
-                                                <rect key="frame" x="146.66666666666666" y="24.666666666666636" width="100" height="81.666666666666686"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsO-Hh-yXv">
+                                                <rect key="frame" x="158.66666666666666" y="27.666666666666629" width="76" height="76"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="dty-Nr-fee"/>
-                                                    <constraint firstAttribute="width" secondItem="wOz-Ki-4c2" secondAttribute="height" multiplier="11:9" id="hic-DF-FQn"/>
+                                                    <constraint firstAttribute="width" secondItem="FsO-Hh-yXv" secondAttribute="height" multiplier="1:1" id="EZo-if-Ib7"/>
                                                 </constraints>
-                                            </imageView>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="emoji4"/>
+                                                <connections>
+                                                    <action selector="emotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DC3-5c-9j1"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <constraints>
+                                            <constraint firstItem="FsO-Hh-yXv" firstAttribute="centerY" secondItem="xIS-tZ-N7J" secondAttribute="centerY" id="79W-dN-PwH"/>
                                             <constraint firstAttribute="width" secondItem="xIS-tZ-N7J" secondAttribute="height" multiplier="3:1" id="86t-Az-YUO"/>
-                                            <constraint firstItem="wOz-Ki-4c2" firstAttribute="centerX" secondItem="xIS-tZ-N7J" secondAttribute="centerX" id="E3K-jS-p53"/>
-                                            <constraint firstItem="wOz-Ki-4c2" firstAttribute="centerY" secondItem="xIS-tZ-N7J" secondAttribute="centerY" id="ftO-Bp-lTf"/>
+                                            <constraint firstItem="FsO-Hh-yXv" firstAttribute="centerX" secondItem="xIS-tZ-N7J" secondAttribute="centerX" id="zHG-o9-1yJ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9k-CT-GaE">
                                         <rect key="frame" x="0.0" y="524" width="393" height="131"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji5" translatesAutoresizingMaskIntoConstraints="NO" id="XYg-S8-Z5u">
-                                                <rect key="frame" x="146.66666666666666" y="24.666666666666636" width="100" height="81.666666666666686"/>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjd-RC-Ufh">
+                                                <rect key="frame" x="157.66666666666666" y="26.666666666666629" width="78" height="78"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="5bo-Pi-7uk"/>
-                                                    <constraint firstAttribute="width" secondItem="XYg-S8-Z5u" secondAttribute="height" multiplier="11:9" id="Nko-tc-ven"/>
+                                                    <constraint firstAttribute="width" secondItem="Zjd-RC-Ufh" secondAttribute="height" multiplier="1:1" id="NHG-w1-J2f"/>
                                                 </constraints>
-                                            </imageView>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="emoji5"/>
+                                                <connections>
+                                                    <action selector="emotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kF7-bf-CQx"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="g9k-CT-GaE" secondAttribute="height" multiplier="3:1" id="DEd-CB-jP5"/>
-                                            <constraint firstItem="XYg-S8-Z5u" firstAttribute="centerY" secondItem="g9k-CT-GaE" secondAttribute="centerY" id="P93-Jw-i7k"/>
-                                            <constraint firstItem="XYg-S8-Z5u" firstAttribute="centerX" secondItem="g9k-CT-GaE" secondAttribute="centerX" id="Ua6-q3-TUa"/>
+                                            <constraint firstItem="Zjd-RC-Ufh" firstAttribute="centerY" secondItem="g9k-CT-GaE" secondAttribute="centerY" id="ckY-8e-Y9P"/>
+                                            <constraint firstItem="Zjd-RC-Ufh" firstAttribute="centerX" secondItem="g9k-CT-GaE" secondAttribute="centerX" id="poT-BO-9Lp"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -129,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869" y="-242"/>
+            <point key="canvasLocation" x="1867.9389312977098" y="-242.25352112676057"/>
         </scene>
         <!--OH MY MOOD-->
         <scene sceneID="4cq-yB-x0z">
@@ -280,6 +300,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sBX-dW-xT0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hWl-jE-74O">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

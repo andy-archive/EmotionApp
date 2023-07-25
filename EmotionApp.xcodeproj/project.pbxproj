@@ -15,6 +15,7 @@
 		A14885482A6FF147002835A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14885462A6FF147002835A1 /* LaunchScreen.storyboard */; };
 		A14C23B02A700B9A006085A3 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14C23AF2A700B9A006085A3 /* WriteViewController.swift */; };
 		A14C23B22A700C34006085A3 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14C23B12A700C34006085A3 /* StatisticsViewController.swift */; };
+		A14C23B42A700EAA006085A3 /* EmotionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14C23B32A700EAA006085A3 /* EmotionEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A14885492A6FF147002835A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14C23AF2A700B9A006085A3 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		A14C23B12A700C34006085A3 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		A14C23B32A700EAA006085A3 /* EmotionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				A148853D2A6FF146002835A1 /* SceneDelegate.swift */,
 				A148853F2A6FF146002835A1 /* ViewController.swift */,
 				A14885412A6FF146002835A1 /* Main.storyboard */,
+				A14C23B32A700EAA006085A3 /* EmotionEnum.swift */,
 				A14C23B12A700C34006085A3 /* StatisticsViewController.swift */,
 				A14C23AF2A700B9A006085A3 /* WriteViewController.swift */,
 				A14885442A6FF147002835A1 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			files = (
 				A14885402A6FF146002835A1 /* ViewController.swift in Sources */,
 				A14C23B22A700C34006085A3 /* StatisticsViewController.swift in Sources */,
+				A14C23B42A700EAA006085A3 /* EmotionEnum.swift in Sources */,
 				A148853C2A6FF146002835A1 /* AppDelegate.swift in Sources */,
 				A14C23B02A700B9A006085A3 /* WriteViewController.swift in Sources */,
 				A148853E2A6FF146002835A1 /* SceneDelegate.swift in Sources */,
