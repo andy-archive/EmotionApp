@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XNH-xp-Php">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sBX-dW-xT0">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--OH MY MOOD-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmotionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WriteViewController" customModule="EmotionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="W7x-0p-cuJ">
-                                <rect key="frame" x="0.0" y="95" width="393" height="655"/>
+                                <rect key="frame" x="0.0" y="139" width="393" height="655"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8Y-KZ-cQn">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="131"/>
@@ -42,7 +42,7 @@
                                         <rect key="frame" x="0.0" y="131" width="393" height="131"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji2" translatesAutoresizingMaskIntoConstraints="NO" id="7fB-cV-e6d">
-                                                <rect key="frame" x="146.66666666666666" y="24.666666666666664" width="100" height="81.666666666666686"/>
+                                                <rect key="frame" x="146.66666666666666" y="24.666666666666693" width="100" height="81.666666666666686"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="7fB-cV-e6d" secondAttribute="height" multiplier="11:9" id="quP-U6-EcJ"/>
                                                     <constraint firstAttribute="width" constant="100" id="vsR-mp-QEv"/>
@@ -125,21 +125,22 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W7x-0p-cuJ" secondAttribute="trailing" id="sV9-j8-Vqf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="OH MY MOOD" id="1SN-nW-ncq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1869" y="-242"/>
         </scene>
-        <!--View Controller-->
+        <!--OH MY MOOD-->
         <scene sceneID="4cq-yB-x0z">
             <objects>
-                <viewController id="XNH-xp-Php" sceneMemberID="viewController">
+                <viewController id="XNH-xp-Php" customClass="StatisticsViewController" customModule="EmotionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Go6-dU-cED">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ebn-aY-FvY">
-                                <rect key="frame" x="0.0" y="89" width="393" height="520"/>
+                                <rect key="frame" x="0.0" y="133" width="393" height="520"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivm-Ma-6az">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
@@ -267,10 +268,67 @@
                             <constraint firstAttribute="trailing" secondItem="ebn-aY-FvY" secondAttribute="trailing" id="xVR-gR-XGU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="OH MY MOOD" id="QRr-lx-N4j"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHW-wc-8F0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907.63358778625945" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1868" y="429"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="87Q-kp-l52">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sBX-dW-xT0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hWl-jE-74O">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="erz-da-deq" kind="relationship" relationship="viewControllers" id="MVV-Ym-hRB"/>
+                        <segue destination="pER-px-hqh" kind="relationship" relationship="viewControllers" id="fbU-8E-VcA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FUr-k3-NM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-205" y="95"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="e2U-Fu-o7Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="erz-da-deq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="s5O-yo-QuG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c6d-gs-kYm">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qGG-GD-Vbc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y28-gK-ObU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014.5038167938931" y="-242.25352112676057"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="95d-lJ-vCM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pER-px-hqh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ASm-bC-dzG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="noO-ua-J2H">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XNH-xp-Php" kind="relationship" relationship="rootViewController" id="U3d-bG-s3n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gda-b5-fAx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015" y="429"/>
         </scene>
     </scenes>
     <resources>
