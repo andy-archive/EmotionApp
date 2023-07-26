@@ -8,19 +8,11 @@
 import UIKit
 
 class StatisticsViewController: UIViewController {
-
-    @IBOutlet var cheerfulEmotionCountLabel: UILabel!
-    @IBOutlet var happyEmotionCountLabel: UILabel!
-    @IBOutlet var calmEmotionCountLabel: UILabel!
-    @IBOutlet var unhappyEmotionCountLabel: UILabel!
-    @IBOutlet var exhaustedEmotionCountLabel: UILabel!
     
     @IBOutlet var emotionCountLabelList: [UILabel]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        designEmotionCountLabels()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,11 +21,9 @@ class StatisticsViewController: UIViewController {
     }
     
     func showEmotionCount() {
-        cheerfulEmotionCountLabel.text! = "\(UserDefaults.standard.string(forKey: "cheerful")!)점"
-        happyEmotionCountLabel.text! = "\(UserDefaults.standard.string(forKey: "happy")!)점"
-        calmEmotionCountLabel.text! = "\(UserDefaults.standard.string(forKey: "calm")!)점"
-        unhappyEmotionCountLabel.text! = "\(UserDefaults.standard.string(forKey: "unhappy")!)점"
-        exhaustedEmotionCountLabel.text! = "\(UserDefaults.standard.string(forKey: "exhausted")!)점"
+        for i in 0..<emotionCountLabelList.count {
+            emotionCountLabelList[i].text = "\(UserDefaults.standard.integer(forKey: "\(i)"))"
+        }
     }
     
     func designEmotionCountLabels() {

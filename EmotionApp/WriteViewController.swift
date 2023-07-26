@@ -14,10 +14,9 @@ class WriteViewController: UIViewController {
     }
     
     @IBAction func emotionButtonTapped(_ sender: UIButton) {
-        
-        let value = UserDefaults.standard.integer(forKey: "\(Emotion.allCases[sender.tag])")
+        let value = UserDefaults.standard.integer(forKey: "\(sender.tag)")
         let result = value + 1
     
-        UserDefaults.standard.set(result, forKey: "\(Emotion.allCases[sender.tag])")
+        UserDefaults.standard.set(result, forKey: "\(sender.tag)")
     }
 }

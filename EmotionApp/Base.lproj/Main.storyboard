@@ -314,11 +314,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="MOOD STATS" id="QRr-lx-N4j"/>
                     <connections>
-                        <outlet property="calmEmotionCountLabel" destination="xkn-2w-dDL" id="SzE-gK-rcH"/>
-                        <outlet property="cheerfulEmotionCountLabel" destination="WFa-bF-bwo" id="SpG-jK-hIb"/>
-                        <outlet property="exhaustedEmotionCountLabel" destination="asd-Tx-dSa" id="5u9-Pq-i56"/>
-                        <outlet property="happyEmotionCountLabel" destination="s5K-PI-FPd" id="Qc1-9c-FdR"/>
-                        <outlet property="unhappyEmotionCountLabel" destination="SSc-iZ-x1f" id="mlO-Ro-Qa6"/>
                         <outletCollection property="emotionCountLabelList" destination="WFa-bF-bwo" collectionClass="NSMutableArray" id="OB0-dY-vug"/>
                         <outletCollection property="emotionCountLabelList" destination="s5K-PI-FPd" collectionClass="NSMutableArray" id="0hf-zz-vBF"/>
                         <outletCollection property="emotionCountLabelList" destination="xkn-2w-dDL" collectionClass="NSMutableArray" id="45A-eS-Van"/>
