@@ -21,6 +21,10 @@ class StatisticsViewController: UIViewController {
         super.viewDidLoad()
         
         designEmotionCountLabels()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         showEmotionCount()
     }
     
