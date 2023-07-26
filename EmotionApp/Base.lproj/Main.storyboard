@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--OH MY MOOD-->
+        <!--MY MOOD-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WriteViewController" customModule="EmotionApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="W7x-0p-cuJ">
-                                <rect key="frame" x="0.0" y="139" width="393" height="655"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="655"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8Y-KZ-cQn">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="131"/>
@@ -141,17 +141,17 @@
                         <constraints>
                             <constraint firstItem="W7x-0p-cuJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UjG-wB-XZj"/>
                             <constraint firstItem="W7x-0p-cuJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bKD-Yk-QaQ"/>
-                            <constraint firstItem="W7x-0p-cuJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="ift-Sm-zxf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W7x-0p-cuJ" secondAttribute="trailing" id="sV9-j8-Vqf"/>
+                            <constraint firstItem="W7x-0p-cuJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xCj-xI-LXQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="OH MY MOOD" id="1SN-nW-ncq"/>
+                    <navigationItem key="navigationItem" title="MY MOOD" id="1SN-nW-ncq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1867.9389312977098" y="-242.25352112676057"/>
         </scene>
-        <!--OH MY MOOD-->
+        <!--MOOD STATS-->
         <scene sceneID="4cq-yB-x0z">
             <objects>
                 <viewController id="XNH-xp-Php" customClass="StatisticsViewController" customModule="EmotionApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -278,6 +278,9 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ivm-Ma-6az" firstAttribute="top" secondItem="ebn-aY-FvY" secondAttribute="top" id="YFF-j0-JxH"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T2S-jQ-qEU"/>
@@ -288,7 +291,7 @@
                             <constraint firstAttribute="trailing" secondItem="ebn-aY-FvY" secondAttribute="trailing" id="xVR-gR-XGU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="OH MY MOOD" id="QRr-lx-N4j"/>
+                    <navigationItem key="navigationItem" title="MOOD STATS" id="QRr-lx-N4j"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHW-wc-8F0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -313,11 +316,11 @@
             </objects>
             <point key="canvasLocation" x="-205" y="95"/>
         </scene>
-        <!--Item-->
+        <!--나의 기분-->
         <scene sceneID="e2U-Fu-o7Q">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="erz-da-deq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="s5O-yo-QuG"/>
+                    <tabBarItem key="tabBarItem" title="나의 기분" image="square.and.pencil" catalog="system" id="s5O-yo-QuG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c6d-gs-kYm">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -332,11 +335,11 @@
             </objects>
             <point key="canvasLocation" x="1014.5038167938931" y="-242.25352112676057"/>
         </scene>
-        <!--Item-->
+        <!--기분 통계-->
         <scene sceneID="95d-lJ-vCM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pER-px-hqh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ASm-bC-dzG"/>
+                    <tabBarItem key="tabBarItem" title="기분 통계" image="chart.bar" catalog="system" id="ASm-bC-dzG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="noO-ua-J2H">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -353,11 +356,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chart.bar" catalog="system" width="128" height="89"/>
         <image name="emoji1" width="53" height="51"/>
         <image name="emoji2" width="52" height="48"/>
         <image name="emoji3" width="50" height="38"/>
         <image name="emoji4" width="52" height="48"/>
         <image name="emoji5" width="54" height="50"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
